@@ -1,6 +1,7 @@
 site_name: "Vibe Coding: AI-боты для бизнеса"
 site_description: "Курс \"Вайб-кодинг: AI-боты для бизнеса\""
 site_author: "Тимофеев Николай"
+repo_url: 'https://github.com/itmo-ict-faculty/vibe-coding-for-business'
 
 theme:
   name: "material"
