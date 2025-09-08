@@ -1,0 +1,21 @@
+site_name: "Vibe Coding: AI-боты для бизнеса"
+site_description: "Курс \"Вайб-кодинг: AI-боты для бизнеса\""
+site_author: "Тимофеев Николай"
+
+theme:
+  name: "material"
+  palette:
+    - dark
+  features:
+    - navigation.tabs.sticky
+    - navigation.tabs.scrollable
+
+nav:
+  - Главная: index.md
+  - Лабораторные:
+      - FAQ/ЧАВО: labs/lab0.md
+      - Лабораторная 1: labs/lab1.md
+      - Лабораторная 2: labs/lab2.md
+      - Лабораторная 3: labs/lab3.md
+  - Лекции: schedule.md
+  - Зачёт: exam.md
