@@ -9,7 +9,8 @@
 Научиться деплоить бота и собирать обратную связь от реальных пользователей для улучшения продукта.
 
 ### Правила по оформлению
-Правила по оформлению отчета по лабораторной работе вы можете изучить по [ссылке](../report.md)
+
+Правила по оформлению отчета по лабораторной работе вы можете изучить по [ссылке](../../report.md).
 
 ### Ход работы
 
@@ -49,11 +50,13 @@
    - Убедитесь, что токен хранится в переменных окружения
 
 2. **Создайте .env файл**
+
 ```bash
 BOT_TOKEN=your_bot_token_here
 ```
 
 3. **Добавьте .gitignore**
+
 ```gitignore
 .env
 *.pyc
@@ -63,6 +66,7 @@ __pycache__/
 ```
 
 4. **Создайте requirements.txt**
+
 ```txt
 python-telegram-bot==20.7
 python-dotenv==1.0.0
@@ -71,6 +75,7 @@ requests==2.31.0
 ```
 
 5. **Добавьте логирование**
+
 ```python
 import logging
 
@@ -90,11 +95,13 @@ logger = logging.getLogger(__name__)
    - Зарегистрируйтесь и получите токен
 
 2. **Запустите бота**
+
 ```bash
 python bot.py
 ```
 
 3. **Запустите ngrok**
+
 ```bash
 ngrok http 8000
 ```
@@ -121,6 +128,7 @@ ngrok http 8000
    - Вставьте токен вашего бота
 
 4. **Добавьте Procfile** (если нужно)
+
 ```procfile
 worker: python bot.py
 ```
@@ -139,6 +147,7 @@ worker: python bot.py
 ##### Вариант 3: Docker (продвинутый)
 
 1. **Создайте Dockerfile**
+
 ```dockerfile
 FROM python:3.11-slim
 
@@ -153,6 +162,7 @@ CMD ["python", "bot.py"]
 ```
 
 2. **Создайте docker-compose.yml**
+
 ```yaml
 version: '3.8'
 
@@ -165,6 +175,7 @@ services:
 ```
 
 3. **Запустите**
+
 ```bash
 docker-compose up -d
 ```
