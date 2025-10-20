@@ -13,10 +13,12 @@ theme:
 
 nav:
   - Главная: index.md
-  - Лабораторные:
-      - FAQ/ЧАВО: labs/lab0.md
+  - Обучение:
+      - Подготовка к работе: preparation.md
       - Лабораторная 1: labs/lab1.md
       - Лабораторная 2: labs/lab2.md
       - Лабораторная 3: labs/lab3.md
   - Лекции: schedule.md
+  - Инструменты: tools.md
+  - Отчетность: report.md
   - Зачёт: exam.md
