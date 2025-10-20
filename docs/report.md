@@ -1,6 +1,7 @@
 ## Описание
 
 ## Правила оформления
+
 Все отчеты по лабораторным работам будут приниматься в формате github репозиториев, где название репозитория отражает следующую информацию: учебный год проведения курса, название курса, номер группы, фамилия, имя и отчетство. 
 Например: `2025-chatbots-z11111-filianin_i_v`
 
@@ -18,13 +19,13 @@
 ```markdown
 University: [ITMO University](https://itmo.ru/ru/)
 Faculty: [FICT](https://fict.itmo.ru)
-Course: [Introduction in routing](https://github.com/itmo-ict-faculty/introduction-in-routing)
-Year: 2023/2024
+Course: [Vibe Coding: AI-боты для бизнеса](https://github.com/itmo-ict-faculty/vibe-coding-for-business)
+Year: 2025/2026
 Group: K66666
 Author: Filianin Ivan Victorovich
 Lab: Lab1
-Date of create: 20.09.2023
-Date of finished: 31.09.2023
+Date of create: 20.09.2025
+Date of finished: 31.09.2025
 ```
 
 > Важно понимать, что "Date of create:" это дата начала работы над лабораторной работой, а "Date of finished:" это дата когда вы защитили своб лабораторную работу перед преподавателем. 
