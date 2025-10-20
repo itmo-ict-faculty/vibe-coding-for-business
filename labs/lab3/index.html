@@ -1,0 +1,1341 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Курс "Вайб-кодинг: AI-боты для бизнеса"">
+      
+      
+        <meta name="author" content="Тимофеев Николай">
+      
+      
+      
+        <link rel="prev" href="../lab2/">
+      
+      
+        <link rel="next" href="../../schedule/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Лабораторная 3 - Vibe Coding: AI-боты для бизнеса</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Vibe Coding: AI-боты для бизнеса" class="md-header__button md-logo" aria-label="Vibe Coding: AI-боты для бизнеса" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Vibe Coding: AI-боты для бизнеса
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Лабораторная 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/itmo-ict-faculty/vibe-coding-for-business" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Vibe Coding: AI-боты для бизнеса" class="md-nav__button md-logo" aria-label="Vibe Coding: AI-боты для бизнеса" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Vibe Coding: AI-боты для бизнеса
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/itmo-ict-faculty/vibe-coding-for-business" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Главная
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Обучение
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Обучение
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Подготовка к работе
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Лабораторная 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Лабораторная 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Лабораторная 3
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Лабораторная 3
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      "Запуск бота для реального использования"
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="&#34;Запуск бота для реального использования&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Описание
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Цель работы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Правила по оформлению
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ход работы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ход работы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаг 1: Выбор способа деплоя
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаг 2: Подготовка к деплою
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаг 3: Деплой (выберите свой вариант)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Шаг 3: Деплой (выберите свой вариант)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ngrok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Вариант 1: ngrok (локальный)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-railway" class="md-nav__link">
+    <span class="md-ellipsis">
+      Вариант 2: Railway (облачный)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Вариант 3: Docker (продвинутый)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаг 4: Тестирование деплоя
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаг 5: Сбор обратной связи
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаг 6: Улучшения на основе фидбека
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Результаты лабораторной работы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Критерии оценивания
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Отчет по лабораторной работе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Полезные ссылки
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Часто задаваемые вопросы
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Лекции
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Инструменты
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Отчетность
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Зачёт
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      "Запуск бота для реального использования"
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="&#34;Запуск бота для реального использования&#34;">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Описание
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Цель работы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Правила по оформлению
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ход работы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ход работы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаг 1: Выбор способа деплоя
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаг 2: Подготовка к деплою
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаг 3: Деплой (выберите свой вариант)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Шаг 3: Деплой (выберите свой вариант)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ngrok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Вариант 1: ngrok (локальный)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-railway" class="md-nav__link">
+    <span class="md-ellipsis">
+      Вариант 2: Railway (облачный)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Вариант 3: Docker (продвинутый)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаг 4: Тестирование деплоя
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаг 5: Сбор обратной связи
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Шаг 6: Улучшения на основе фидбека
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Результаты лабораторной работы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Критерии оценивания
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Отчет по лабораторной работе
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Полезные ссылки
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Часто задаваемые вопросы
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="3">Лабораторная работа 3</h1>
+<h2 id="_1">"Запуск бота для реального использования"</h2>
+<h3 id="_2">Описание</h3>
+<p>В этой лабораторной работе вы развернете своего бота так, чтобы им могли пользоваться реальные люди - ваши коллеги, друзья или команда. Это последний шаг от идеи до работающего продукта!</p>
+<h3 id="_3">Цель работы</h3>
+<p>Научиться деплоить бота и собирать обратную связь от реальных пользователей для улучшения продукта.</p>
+<h3 id="_4">Правила по оформлению</h3>
+<p>Правила по оформлению отчета по лабораторной работе вы можете изучить по <a href="../../report.md">ссылке</a>.</p>
+<h3 id="_5">Ход работы</h3>
+<h4 id="1">Шаг 1: Выбор способа деплоя</h4>
+<p>Выберите один из вариантов (в порядке сложности):</p>
+<p><strong>1. Локальный запуск с ngrok (самый простой)</strong>
+- Запуск на своем компьютере
+- Использование ngrok для доступа из интернета
+- Подходит для краткосрочного тестирования
+- Бесплатно, но требует постоянно включенный компьютер</p>
+<p><strong>2. Облачный хостинг (рекомендуется)</strong>
+- Деплой на бесплатных платформах
+- Автоматический запуск при перезагрузке
+- Подходит для постоянного использования
+- Варианты:
+  - <a href="https://railway.app/">Railway</a> - самый простой
+  - <a href="https://render.com/">Render</a>
+  - <a href="https://fly.io/">Fly.io</a>
+  - <a href="https://www.heroku.com/">Heroku</a></p>
+<p><strong>3. Docker + VPS (продвинутый)</strong>
+- Контейнеризация бота
+- Запуск на своем сервере
+- Полный контроль
+- Требует больше знаний</p>
+<h4 id="2">Шаг 2: Подготовка к деплою</h4>
+<p><strong>Для любого способа:</strong></p>
+<ol>
+<li><strong>Проверьте код</strong></li>
+<li>Убедитесь, что бот работает локально</li>
+<li>Проверьте обработку ошибок</li>
+<li>
+<p>Убедитесь, что токен хранится в переменных окружения</p>
+</li>
+<li>
+<p><strong>Создайте .env файл</strong></p>
+</li>
+</ol>
+<pre><code class="language-bash">BOT_TOKEN=your_bot_token_here
+</code></pre>
+<ol>
+<li><strong>Добавьте .gitignore</strong></li>
+</ol>
+<pre><code class="language-gitignore">.env
+*.pyc
+__pycache__/
+*.db
+*.log
+</code></pre>
+<ol>
+<li><strong>Создайте requirements.txt</strong></li>
+</ol>
+<pre><code class="language-txt">python-telegram-bot==20.7
+python-dotenv==1.0.0
+pandas==2.1.4
+requests==2.31.0
+</code></pre>
+<ol>
+<li><strong>Добавьте логирование</strong></li>
+</ol>
+<pre><code class="language-python">import logging
+
+logging.basicConfig(
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO
+)
+logger = logging.getLogger(__name__)
+</code></pre>
+<h4 id="3_1">Шаг 3: Деплой (выберите свой вариант)</h4>
+<h5 id="1-ngrok">Вариант 1: ngrok (локальный)</h5>
+<ol>
+<li><strong>Установите ngrok</strong></li>
+<li>Скачайте с <a href="https://ngrok.com/">ngrok.com</a></li>
+<li>
+<p>Зарегистрируйтесь и получите токен</p>
+</li>
+<li>
+<p><strong>Запустите бота</strong></p>
+</li>
+</ol>
+<pre><code class="language-bash">python bot.py
+</code></pre>
+<ol>
+<li><strong>Запустите ngrok</strong></li>
+</ol>
+<pre><code class="language-bash">ngrok http 8000
+</code></pre>
+<ol>
+<li><strong>Настройте webhook</strong></li>
+<li>Скопируйте URL из ngrok (например: <code>https://abc123.ngrok.io</code>)</li>
+<li>
+<p>Откройте в браузере: <code>https://api.telegram.org/bot&lt;TOKEN&gt;/setWebhook?url=https://abc123.ngrok.io/webhook</code></p>
+</li>
+<li>
+<p><strong>Готово!</strong> Бот доступен из интернета</p>
+</li>
+</ol>
+<h5 id="2-railway">Вариант 2: Railway (облачный)</h5>
+<ol>
+<li><strong>Зарегистрируйтесь на Railway</strong></li>
+<li>Перейдите на <a href="https://railway.app/">railway.app</a></li>
+<li>
+<p>Войдите через GitHub</p>
+</li>
+<li>
+<p><strong>Создайте новый проект</strong></p>
+</li>
+<li>Нажмите "New Project"</li>
+<li>Выберите "Deploy from GitHub repo"</li>
+<li>
+<p>Подключите ваш репозиторий</p>
+</li>
+<li>
+<p><strong>Настройте переменные окружения</strong></p>
+</li>
+<li>В настройках проекта добавьте <code>BOT_TOKEN</code></li>
+<li>
+<p>Вставьте токен вашего бота</p>
+</li>
+<li>
+<p><strong>Добавьте Procfile</strong> (если нужно)</p>
+</li>
+</ol>
+<pre><code class="language-procfile">worker: python bot.py
+</code></pre>
+<ol>
+<li><strong>Деплой</strong></li>
+<li>Railway автоматически определит Python проект</li>
+<li>Установит зависимости из requirements.txt</li>
+<li>
+<p>Запустит бота</p>
+</li>
+<li>
+<p><strong>Получите URL</strong></p>
+</li>
+<li>Railway даст вам URL вида: <code>https://your-app.railway.app</code></li>
+<li>
+<p>Настройте webhook: <code>https://api.telegram.org/bot&lt;TOKEN&gt;/setWebhook?url=https://your-app.railway.app/webhook</code></p>
+</li>
+<li>
+<p><strong>Готово!</strong> Бот работает 24/7</p>
+</li>
+</ol>
+<h5 id="3-docker">Вариант 3: Docker (продвинутый)</h5>
+<ol>
+<li><strong>Создайте Dockerfile</strong></li>
+</ol>
+<pre><code class="language-dockerfile">FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD [&quot;python&quot;, &quot;bot.py&quot;]
+</code></pre>
+<ol>
+<li><strong>Создайте docker-compose.yml</strong></li>
+</ol>
+<pre><code class="language-yaml">version: '3.8'
+
+services:
+  bot:
+    build: .
+    env_file:
+      - .env
+    restart: unless-stopped
+</code></pre>
+<ol>
+<li><strong>Запустите</strong></li>
+</ol>
+<pre><code class="language-bash">docker-compose up -d
+</code></pre>
+<h4 id="4">Шаг 4: Тестирование деплоя</h4>
+<ol>
+<li><strong>Проверьте работу бота</strong></li>
+<li>Откройте бота в Telegram</li>
+<li>Протестируйте все функции</li>
+<li>
+<p>Проверьте логи (если доступны)</p>
+</li>
+<li>
+<p><strong>Проверьте стабильность</strong></p>
+</li>
+<li>Оставьте бота работать на несколько часов</li>
+<li>Проверьте, что он не падает</li>
+<li>Убедитесь, что память не растет</li>
+</ol>
+<h4 id="5">Шаг 5: Сбор обратной связи</h4>
+<ol>
+<li><strong>Пригласите пользователей</strong></li>
+<li>Создайте группу или канал</li>
+<li>Пригласите 3-5 человек для тестирования</li>
+<li>
+<p>Дайте им ссылку на бота</p>
+</li>
+<li>
+<p><strong>Соберите фидбек</strong></p>
+</li>
+<li>Создайте форму или опрос</li>
+<li>
+<p>Спросите:</p>
+<ul>
+<li>Что понравилось?</li>
+<li>Что не понравилось?</li>
+<li>Что можно улучшить?</li>
+<li>Хотели бы использовать такой бот?</li>
+</ul>
+</li>
+<li>
+<p><strong>Задокументируйте</strong></p>
+</li>
+<li>Скриншоты отзывов</li>
+<li>Статистика использования</li>
+<li>Примеры использования</li>
+</ol>
+<h4 id="6">Шаг 6: Улучшения на основе фидбека</h4>
+<ol>
+<li><strong>Проанализируйте отзывы</strong></li>
+<li>Выделите главные проблемы</li>
+<li>
+<p>Определите приоритеты</p>
+</li>
+<li>
+<p><strong>Внесите улучшения</strong></p>
+</li>
+<li>Используйте LLM для генерации улучшений</li>
+<li>Протестируйте изменения</li>
+<li>
+<p>Задеплойте новую версию</p>
+</li>
+<li>
+<p><strong>Повторно соберите фидбек</strong></p>
+</li>
+<li>Покажите пользователям улучшения</li>
+<li>Убедитесь, что проблемы решены</li>
+</ol>
+<h3 id="_6">Результаты лабораторной работы</h3>
+<p>В результате данной работы у вас должно быть:</p>
+<ul>
+<li>✅ Бот развернут и доступен для использования</li>
+<li>✅ Собрана обратная связь от реальных пользователей</li>
+<li>✅ Внесены улучшения на основе фидбека</li>
+<li>✅ Бот работает стабильно</li>
+<li>✅ Отчет с результатами использования</li>
+</ul>
+<h3 id="_7">Критерии оценивания</h3>
+<ul>
+<li><strong>Деплой (40%)</strong>: Бот успешно развернут и работает стабильно</li>
+<li><strong>Сбор фидбека (30%)</strong>: Собрана обратная связь от 3+ пользователей</li>
+<li><strong>Улучшения (20%)</strong>: Внесены улучшения на основе фидбека</li>
+<li><strong>Отчет (10%)</strong>: Качество отчета и документации</li>
+</ul>
+<h3 id="_8">Отчет по лабораторной работе</h3>
+<p>Отчет должен включать:</p>
+<ol>
+<li><strong>Описание деплоя</strong></li>
+<li>Какой способ выбрали</li>
+<li>Почему именно этот</li>
+<li>
+<p>URL бота (или скриншот)</p>
+</li>
+<li>
+<p><strong>Процесс деплоя</strong></p>
+</li>
+<li>Пошаговая инструкция</li>
+<li>С какими проблемами столкнулись</li>
+<li>
+<p>Как решили</p>
+</li>
+<li>
+<p><strong>Сбор фидбека</strong></p>
+</li>
+<li>Количество пользователей</li>
+<li>Скриншоты отзывов</li>
+<li>
+<p>Статистика использования</p>
+</li>
+<li>
+<p><strong>Анализ фидбека</strong></p>
+</li>
+<li>Главные проблемы</li>
+<li>Что понравилось пользователям</li>
+<li>
+<p>Приоритеты улучшений</p>
+</li>
+<li>
+<p><strong>Улучшения</strong></p>
+</li>
+<li>Что изменили</li>
+<li>Как это помогло</li>
+<li>
+<p>Новый фидбек (если есть)</p>
+</li>
+<li>
+<p><strong>Выводы</strong></p>
+</li>
+<li>Что получилось хорошо</li>
+<li>Что можно улучшить дальше</li>
+<li>Чему научились</li>
+</ol>
+<h3 id="_9">Полезные ссылки</h3>
+<ul>
+<li><a href="https://ngrok.com/docs">ngrok Documentation</a></li>
+<li><a href="https://docs.railway.app/">Railway Documentation</a></li>
+<li><a href="https://render.com/docs">Render Documentation</a></li>
+<li><a href="https://docs.docker.com/">Docker Documentation</a></li>
+<li><a href="https://docs.python-telegram-bot.org/en/stable/telegram.bot.html#telegram.Bot.set_webhook">python-telegram-bot Webhooks</a></li>
+<li><a href="https://12factor.net/config">Environment Variables Best Practices</a></li>
+</ul>
+<h3 id="_10">Часто задаваемые вопросы</h3>
+<p><strong>Q: Какой способ деплоя выбрать?</strong><br />
+A: Для начала - Railway или Render. Они самые простые и бесплатные.</p>
+<p><strong>Q: Что если бот упал?</strong><br />
+A: Проверьте логи, найдите ошибку, исправьте и задеплойте заново. Это нормально!</p>
+<p><strong>Q: Нужно ли платить за хостинг?</strong><br />
+A: Нет, все предложенные платформы имеют бесплатный тариф для небольших проектов.</p>
+<p><strong>Q: Как собрать фидбек, если нет пользователей?</strong><br />
+A: Попросите друзей, коллег, однокурсников. Можно даже использовать бота самому и записать видео.</p>
+<p><strong>Q: Что если пользователи не хотят тестировать?</strong><br />
+A: Сделайте бота полезным для них - решите их реальную проблему!</p>
+<p><strong>Q: Сколько должно быть пользователей?</strong><br />
+A: Минимум 3-5 человек. Больше - лучше, но качество важнее количества.</p>
+<p><strong>Q: Как долго должен работать бот?</strong><br />
+A: Минимум несколько дней для сбора фидбека. Для защиты - достаточно показать, что он работает.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs.sticky", "navigation.tabs.scrollable"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
